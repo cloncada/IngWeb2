@@ -4,8 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "tareas")
-public class Tutorial {
-
+public class Tarea {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
@@ -19,11 +18,11 @@ public class Tutorial {
 	@Column(name = "published")
 	private boolean published;
 
-	public Tutorial() {
+	public Tarea() {
 
 	}
 
-	public Tutorial(String title, String description, boolean published) {
+	public Tarea(String title, String description, boolean published) {
 		this.title = title;
 		this.description = description;
 		this.published = published;
